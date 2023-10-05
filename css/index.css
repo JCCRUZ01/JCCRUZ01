@@ -1,0 +1,139 @@
+ /* Diseño antes de la mediaqueries*/
+ body {
+    display: flex;
+    min-height: 50vh;
+    flex-direction: column;
+    background-image: url('/assets/img/fondo/18.png');
+    background-size: contain;
+    background-blend-mode:darken;
+    background-color: rgb(208, 206, 206);  
+      
+   
+    background-repeat: repeat;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+
+nav{
+    background-image: url("/assets/img/fondo/11.png");
+    background-size: cover;
+    
+}
+.nav-wrapper{
+    
+    background-color: rgba(37, 37, 38, 0.5);
+}
+.sidenav{
+    background-image: url("/assets/img/fondo/11.png");
+    background-size: cover;
+    
+}
+nav ul a {
+  font-size: large;
+}
+
+.sidenav li a { 
+  font-size: 20px;
+  font-family:Arial, Helvetica, sans-serif
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.card:hover {
+  background-color: #07000a; /* Cambia el color de fondo al hacer hover */
+  color: #050505; /* Cambia el color del texto al hacer hover */
+
+  
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+
+
+sobre_mimg{
+    max-width: 300px;
+    max-height: 300px;
+    min-width: 300px;
+    min-height: 300px;
+}
+
+footer{
+    background-image: url("/assets/img/fondo/11.png");
+    background-size: cover;
+    
+    
+}
+
+.animado {
+  animation-name: aparecer;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+}
+
+#mi_mirm{
+  font-family: 'Brush Script MT', cursive;
+  font-size: 30px;
+  overflow: hidden;
+  animation: writeSignature 6s steps(500) backwards;
+  animation-iteration-count: infinite;
+}
+
+.card:hover {
+  background-color: #ded3d3; /* Cambia el color de fondo al hacer hover */
+  color: #050505; /* Cambia el color del texto al hacer hover */
+
+  
+}
+
+#tarjeta_color{
+  background: linear-gradient(to bottom, hsla(0, 0%, 1%, 0.5), rgba(254, 254, 255, 0.5));
+}
+
+.card{
+  border-radius: 10px;
+}
+
+
+
+
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 600px) {
+    /* Tus estilos para dispositivos móviles aquí */
+    .parallax, img{
+      background-size: contain;
+    }
+    p{
+        font-size: 18px;
+    }
+    li{
+      font-size: 20px;
+    }
+  }
+
+  /* Estilos para tabletas */
+@media screen and (min-width: 601px) and (max-width: 992px) {
+    /* Tus estilos para tabletas aquí */
+    p{
+        font-size: 18px;
+    }
+    li{
+      font-size: 24px;
+    }
+  }
+
+  /* Estilos para escritorio */
+@media screen and (min-width: 993px) {
+    /* Tus estilos para escritorio aquí */
+    p{
+        font-size: 18px;
+    }
+    li{
+      font-size: 20px;
+    }
+  }
