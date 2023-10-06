@@ -48,10 +48,6 @@ function animarElementoOnScroll(elementoId) {
   });
 
   document.addEventListener("scroll", function() {
-    animarElementoOnScroll("#certificados");
-  });
-
-  document.addEventListener("scroll", function() {
     animarElementoOnScroll("#portafolio");
   });
   
